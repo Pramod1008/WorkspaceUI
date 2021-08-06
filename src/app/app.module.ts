@@ -18,8 +18,8 @@ import { AddEditAdminTypeComponent } from './admin-type/add-edit-admin-type/add-
 import {HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AdminTypeService } from './Service/admin-type.service';
-import { HeaderComponent } from './common/header/header.component';
-import { FooterComponent } from './common/footer/footer.component';
+import { HeaderComponent } from './Shared/header/header.component';
+import { FooterComponent } from './Shared/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { AlertComponent, AlertModule } from './_components';
