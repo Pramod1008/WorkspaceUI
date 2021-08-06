@@ -49,7 +49,8 @@ export class AddEditAdminTypeComponent implements OnInit {
       IsActive:true 
   }) 
   }
-  
+  get f() { return this.admintypeForm.controls; }
+
   onSubmit(){
     if(!this.admintypeForm.valid){
       return

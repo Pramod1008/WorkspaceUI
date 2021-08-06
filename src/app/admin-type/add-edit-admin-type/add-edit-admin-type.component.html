@@ -12,13 +12,16 @@
             <label class="control-label col-md-4">Admin Type</label>
         </div> 
         <div class="col-md-3">
-            <input class="form-control" type="text" formControlName="TypeName" >
+            <input class="form-control" type="text" formControlName="TypeName" [ngClass]="{ 'is-invalid': submitted && f.TypeName.errors }">
+            <div *ngIf="submitted && f.TypeName.errors" class="invalid-feedback">
+                <div *ngIf="f.TypeName.errors.required">First Name is required</div>
+            </div>
         </div> 
     </div>
     <br/>    
     <div class="form-group row justify-content-md-center">
         <div class="col-md-6  offset-md-3">
-        <button class="btn btn-success btn-lg btn-block" type="submit">
+        <button class="btn btn-success btn-lg btn-block" type="submit" [disabled]="!admintypeForm.valid" >
             <i class="fa fa-database"></i>
             Submit
         </button>

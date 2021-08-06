@@ -2,6 +2,6 @@
 <div *ngIf="message" [ngClass]="message.cssClass">{{message.text}}</div> -->
 
 <div *ngFor="let alert of alerts" class="{{cssClass(alert)}}">
-    <!-- <a class="fas fa-times-circle" (click)="removeAlert(alert)"></a> -->
+    <a class="fas fa-times-circle" (click)="removeAlert(alert)"></a>
     <span [innerHTML]="alert.message"></span>
 </div>
