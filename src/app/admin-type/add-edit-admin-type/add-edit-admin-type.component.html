@@ -1,0 +1,30 @@
+<div class="form-group row justify-content-md-center">    
+    <div class="col-md-4 text-center">
+        <label class="control-label col-md-4">
+            <h1>{{title}}</h1>
+        </label>
+    </div> 
+</div>
+<form [formGroup]="admintypeForm" autocomplete="off" (submit)="onSubmit()" >
+    <input type="hidden" name="Id" formControlName="Id">
+    <div class="form-group row justify-content-md-center">           
+        <div class="col-md-4 text-center">
+            <label class="control-label col-md-4">Admin Type</label>
+        </div> 
+        <div class="col-md-3">
+            <input class="form-control" type="text" formControlName="TypeName" >
+        </div> 
+    </div>
+    <br/>    
+    <div class="form-group row justify-content-md-center">
+        <div class="col-md-6  offset-md-3">
+        <button class="btn btn-success btn-lg btn-block" type="submit">
+            <i class="fa fa-database"></i>
+            Submit
+        </button>
+        &nbsp;
+        <a mat-flat-button color="success" routerLink="/showadmintype">
+            <mat-icon class="material-icons">line_weight</mat-icon>Show Admin Type List</a>
+        </div>       
+    </div>     
+  </form>

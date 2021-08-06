@@ -1,0 +1,15 @@
+.mat-success {
+    background-color: rgb(116, 66, 96);
+    color: #fff;
+}
+
+.mat-icon{
+    height:48px !important;
+    width:48px !important;
+    font-size:48px !important;
+}
+
+.control-label
+{
+    font-weight: bold; font-size: 16px;
+}
